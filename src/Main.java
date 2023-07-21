@@ -1,16 +1,12 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Main main = new Main();
-
         main.population();
     }
 
     private void sequence() {
-        // 7 14 21 28 35 42 49 56 63 70 77 84 91 98
         int j = 7;
-        while (j <= 98){
+        while (j <= 98) {
             System.out.println(j);
             j += 7;
         }
@@ -26,11 +22,6 @@ public class Main {
     }
 
     private void population() {
-        // 1. current population = 10 millions
-        // 2. every year born each 1000 - 14
-        // 3. every year death each 1000 - 8
-        // population after 10 years
-
         int currentPopulation = 10000000;
         int beingBorn = 14;
         int beingDeath = 8;
@@ -48,6 +39,5 @@ public class Main {
             System.out.println("====================");
         }
         System.out.println(currentPopulation);
-
     }
 }
